@@ -1,20 +1,45 @@
 .main-container{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .full-screen {
-    width: 100%;
-    height: 100%;
-}
-
-#tedy-bear{
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
+
+#tedy-bear{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.main-game {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.second-game {
+position: absolute;
+bottom:0;
+right:0;
+width: 16%;
+height: 9%;
+}
+
+div {
+cursor: pointer
+}
+
+iframe {
+pointer-events: none; 
+}
+

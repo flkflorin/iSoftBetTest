@@ -5,7 +5,6 @@ window.addEventListener('load', function() {
 window.addEventListener('resize', function() {
     app.renderer.resize(window.innerWidth, window.innerHeight);
   
-    // TODO: sa fie resize fata de noul centru
     dude.x = app.screen.width / 2;
     dude.y = app.screen.height / 2;
 })
@@ -40,8 +39,8 @@ dude.y = app.screen.height / 2;
 
  dude.on('pointertap', onPointerTap)
   // events for drag start
-  dude.on('mousedown', onDragStart)
-  dude.on('touchstart', onDragStart)
+ dude.on('mousedown', onDragStart)
+ dude.on('touchstart', onDragStart)
  // events for drag end
  dude .on('mouseup', onDragEnd)
  dude .on('mouseupoutside', onDragEnd)
@@ -51,9 +50,9 @@ dude.y = app.screen.height / 2;
  dude.on('mousemove', onDragMove)
  dude .on('touchmove', onDragMove);
 
-app.stage.addChild(dude);
+ app.stage.addChild(dude);
 
-app.ticker.add(() => {
+ app.ticker.add(() => {
     // just for fun, let's rotate mr rabbit a little
     dude.rotation += 0.1;
 });
